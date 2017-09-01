@@ -1,4 +1,14 @@
-# FrontEnd Bifrost
+# FrontEnd Modelo
+
+Contiene 
+
+Menus stylos y Covalent
+Material desing
+Grilla de NgPrime
+Angular2-jwt
+
+Traduccion
+
 
 Proyecto Desarrollado por Cesar Alvarado 2017 para ClaseFinal JoeDayz
 
