@@ -1,0 +1,51 @@
+<md-card class="example-card">
+    <md-card-header>
+      <!-- <div md-card-avatar class="example-header-image"></div> -->
+      <md-card-title>Cliente : {{ idx }}</md-card-title>
+      <!-- <md-card-subtitle>Dog Breed</md-card-subtitle> -->
+    </md-card-header>
+    <md-card-content>
+
+        <div layout="row" layout-margin> 
+
+            <md-input-container flex=50>
+                <input mdInput
+                        #titleElement
+                        #titleControl="ngModel" 
+                        type="text" 
+                        placeholder="Nombre de Cliente" 
+                        [(ngModel)]="nombre" 
+                        name="nombre" 
+                        maxlength="20" 
+                        required>
+                <md-hint align="start">
+                  <span [hidden]="titleControl.pristine || !titleControl.errors?.required" class="tc-red-600">Required</span>
+                </md-hint>
+                <md-hint align="end">{{titleElement.value.length}} / 20</md-hint>
+              </md-input-container>
+
+
+              <md-input-container flex=50>
+                  <input mdInput
+                          #titleElement
+                          #titleControl="ngModel" 
+                          type="text" 
+                          placeholder="Correo Electronico" 
+                          [(ngModel)]="email" 
+                          name="email" 
+                          maxlength="20" 
+                          required>
+                  <md-hint align="start">
+                    <span [hidden]="titleControl.pristine || !titleControl.errors?.required" class="tc-red-600">Required</span>
+                  </md-hint>
+                  <md-hint align="end">{{titleElement.value.length}} / 20</md-hint>
+                </md-input-container>              
+        </div>        
+
+
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button (click)="goBack()">REGRESAR</button>
+      <button md-raised-button (click)="goGrabar()">GRABAR</button>
+    </md-card-actions>
+  </md-card>

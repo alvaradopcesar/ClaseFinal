@@ -1,0 +1,21 @@
+
+
+<md-card class="example-card">
+  <md-card-content>
+
+      <p-dataTable [value]="clientes" selectionMode="single" (onRowSelect)="onRowSelect($event)" >
+          <p-column field="idx" header="Codigo"></p-column>
+          <p-column field="nombre" header="Nombre"></p-column>
+          <p-column field="email" header="Correo"></p-column>
+          <p-column field="fechacreacion" header="Fecha"></p-column>
+      </p-dataTable>
+
+  </md-card-content>
+  <!-- <md-card-actions> -->
+    <!-- <button (click)="Prueba()" md-button>Prueba</button> -->
+  <!-- </md-card-actions> -->
+</md-card>
+
+<a md-fab color="accent" class="mat-fab-bottom-right fixed" [routerLink]="['add']"> 
+    <md-icon>add</md-icon>
+</a>

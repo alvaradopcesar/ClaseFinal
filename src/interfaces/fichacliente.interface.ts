@@ -1,0 +1,44 @@
+
+export interface IFichaCliente {
+    idx?: number;
+    sts_rec?: number;
+    user_idx?: number;
+    nda_enviado?: number;
+    nda_firmado?: number;
+    mou_enviado?: number;
+    mou_firmado?: number;
+    con_fir_enviado?: number;
+    con_fin_firmado?: number;
+    tipo_cliente?: string;
+    cliente_principal?: number;
+    ic_ciudad?: string;
+    ic_logo?: string;
+    ic_razon_social?: string;
+    ic_idfiscal?: string;
+    ic_ubicacion?: string;
+    ic_cobertura_idx?: string;
+    ic_cobertura?: string;
+    sc_acceso_internet?: number;
+    sc_redes_privadas?: number;
+    sc_servicio_video?: number;
+    sc_red_back_haul?: number;
+    sc_tecnologia_idx?: number;
+    sc_plazo_contratacion_idx?: number;
+    sc_tipo_negocio_idx?: number;
+    sc_moneda_facturar_idx?: number;
+    sc_cond_esp_comisionamiento?: string;
+    sc_cond_esp_incluyeferiado?: string;
+    sc_cond_esp_incluyefer_txt1?: string;
+    sc_cond_esp_incluyefer_txt2?: string;
+    sc_cond_esp_incluyefer_txt3?: string;
+    sc_rf_alta_servicio?: string;
+    sc_rf_alta_servicio_otros?: string;
+    sc_rf_modi_servicio?: string;
+    sc_rf_modi_servicio_otros?: string;
+    sc_rf_rentasd?: string;
+    sc_rf_rentasd_otros?: string;
+    rf_comentarios?: string;
+    dcreate?: Date;
+    dmodify?: Date;
+    ddelete?: Date;
+}

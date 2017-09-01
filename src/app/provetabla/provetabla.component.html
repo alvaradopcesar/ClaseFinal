@@ -1,0 +1,23 @@
+<md-card class="example-card">
+  <md-card-header>
+    <!-- <div md-card-avatar class="example-header-image"></div> -->
+    <md-card-title>Manteniiento de Proveedores</md-card-title>
+    <!-- <md-card-subtitle>Dog Breed</md-card-subtitle> -->
+  </md-card-header>
+  <!-- <img md-card-image src="assets/img/examples/shiba2.jpg"> -->
+  <md-card-content>
+      <p-dataTable [value]="proveedor" selectionMode="single" (onRowSelect)="onRowSelect($event)" >
+          <p-column field="idx" header="Codigo" [sortable]="true"></p-column>
+          <p-column field="nombre" header="Nombre" [sortable]="true" ></p-column>
+          <p-column field="email" header="Correo" [sortable]="true"></p-column>
+          <p-column field="edad" header="Edad"></p-column>
+          <p-column field="fechacreacion" header="Fecah creacion"></p-column>
+      </p-dataTable>
+
+  </md-card-content>
+
+  <md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+  </md-card-actions>
+</md-card>

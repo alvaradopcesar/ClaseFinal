@@ -1,0 +1,49 @@
+{
+  "HOME": {
+    "TITLE": "Hola Angular con ngx-translate! ",
+    "SELECT": "Escoja su lenguaje"
+  },
+  "MENU": {
+    "Administracion de Tokens" : "Clientes",
+    "Grafico" : "Grafica de Consumo",
+    "Descargas" : "Descargas",
+    "Logout" : "Logout"
+  },
+  "TABLA_SELECCION": {
+    "Seleccione la terminal" : "Seleccione la terminal  ",
+    "SiteID" : "SiteId  ",
+    "Esn" : "Esn  ",
+    "Ingrese los tokens en GB" : "Ingrese los tokens en GB  ",
+    "Enviar Solicitud" : "Enviar Solicitud "
+  },
+  "LOGIN":{
+    "Ingrese sus datos para iniciar sesion" : "sign in via your current corporate account",
+    "Username" : "Username ",
+    "Password" : "Password ",
+    "Iniciar Sesion" : "Sign In"
+  },
+  "TABLA_TOKEN":{
+    "Fecha Solicitud" : "Fecha Solicitud ",
+    "Site ID" : "Site ID ",
+    "ESN" : "ESN ",
+    "N Token (GB)" : "N Token (GB) ",
+    "Estado" : "Estado ",
+    "Fecha de atencion" : "Fecha de atención ",
+    "Accion" : "Acción ",
+    "observacion" : "Observación"
+  },
+  "GRAFICO":{
+    "GraficoTitulo" : "Consumo histórico en horario normal  ",
+    "descargar_CVS" : "Descargar CVS  ",
+    "mnmo_date" : "Fecha ",
+    "overallcapacity" : "Capacidad ",
+    "overallusage" : "Uso ",
+    "availtokens" : "Tokens"
+  },
+  "DESCARGA":{
+    "titulo01" : "Skynet de Escritorio ",
+    "descri01" : "Descarga de apliacion de escritorio Skynet ",
+    "titulo02" : "Manual de Usuario ",
+    "descri02" : "Descarga de Manual de usuario que le permitira usar correctamente Skynet de Escritorio"
+  }
+}

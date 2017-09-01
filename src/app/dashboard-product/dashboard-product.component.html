@@ -1,0 +1,102 @@
+<!-- <td-layout-nav logo="assets:covalent"> -->
+<td-layout-nav >
+  <div td-toolbar-content layout="row" layout-align="center center" flex>
+    <!-- <span>Quickstart</span> -->
+    <span>Demo</span>
+    <span flex></span>
+    <!-- <a md-icon-button mdTooltip="Docs" href="https://teradata.github.io/covalent/" target="_blank"><md-icon>chrome_reader_mode</md-icon></a> -->
+    <!-- <a md-icon-button mdTooltip="Github" href="https://github.com/teradata/covalent" target="_blank"><md-icon svgIcon="assets:github"></md-icon></a> -->
+  </div>
+  <td-layout-manage-list #manageList
+                        [opened]="media.registerQuery('gt-sm') | async"
+                        [mode]="(media.registerQuery('gt-sm') | async) ? 'side' : 'push'"
+                        [sidenavWidth]="(media.registerQuery('gt-xs') | async) ? '257px' : '100%'">
+    <md-toolbar td-sidenav-content>
+      <!-- <span>Product Name</span> -->
+      <span>Opciones</span>
+    </md-toolbar>
+    <md-nav-list td-sidenav-content>
+      <a md-list-item
+        md-ripple class="block relative"
+        (click)="!media.query('gt-sm') && manageList.close()"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['/product']">
+        <md-icon md-list-icon>dashboard</md-icon>
+        <!-- Administracion de Tokens -->
+        Solicitudes
+       </a>
+
+      <a md-list-item
+       md-ripple class="block relative"
+       (click)="!media.query('gt-sm') && manageList.close()"
+       [routerLinkActive]="['active']"
+       [routerLinkActiveOptions]="{exact:true}"
+       [routerLink]="['/product/clientetabla']">
+       <md-icon md-list-icon>android</md-icon>
+       <!-- Administracion de Tokens -->
+       Clientes
+      </a>       
+
+      <a md-list-item
+      md-ripple class="block relative"
+      (click)="!media.query('gt-sm') && manageList.close()"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{exact:true}"
+      [routerLink]="['/product/proveedortabla']">
+      <md-icon md-list-icon>android</md-icon>
+      <!-- Administracion de Tokens -->
+      Proveedores
+     </a>       
+
+      <!-- <a md-list-item
+        md-ripple class="block relative"
+        (click)="!media.query('gt-sm') && manageList.close()"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['/fichacliente']">
+        <md-icon md-list-icon>person</md-icon>
+        Ficha Cliente
+       </a> -->
+        
+      <!-- <a md-list-item
+        md-ripple class="block relative"
+        (click)="!media.query('gt-sm') && manageList.close()"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['stats']">
+        <md-icon md-list-icon>insert_chart</md-icon>
+        Stats
+      </a> -->
+      <!-- <a md-list-item
+        md-ripple class="block relative"
+        (click)="!media.query('gt-sm') && manageList.close()"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['features']">
+        <md-icon md-list-icon>star</md-icon>
+        Features
+      </a> -->
+
+      <a md-list-item
+        md-ripple class="block relative"
+        (click)="logout()"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{exact:true}"
+        [routerLink]="['features']">
+        <md-icon md-list-icon>exit_to_app</md-icon>
+        Logout
+      </a>
+      
+    </md-nav-list>
+    <div td-toolbar-content layout="row" layout-align="start center" flex>
+      <span>{{title}}</span>
+      <span flex></span>
+      <!-- <button md-icon-button><md-icon class="md-24">view_module</md-icon></button> -->
+      <!-- <button md-icon-button><md-icon class="md-24">sort</md-icon></button> -->
+      <!-- <button md-icon-button><md-icon class="md-24">settings</md-icon></button> -->
+      <!-- <button md-icon-button><md-icon class="md-24">more_vert</md-icon></button> -->
+    </div>
+    <router-outlet></router-outlet>
+  </td-layout-manage-list>
+</td-layout-nav>

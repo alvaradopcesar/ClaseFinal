@@ -1,0 +1,50 @@
+<!--<div class="md-content" class="inset">-->
+
+        <div flex-gt-xs="100">
+
+            <md-card>
+                <p-dataTable [value]="solicitudes"  
+                    [paginator]="false" [rows]="10" [responsive]="true" sortMode="single"
+                    selectionMode="single" (onRowSelect)="onRowSelectTokenAdm($event)" >
+                    <!--[(selection)]="selectedCar2" (onRowSelect)="onRowSelectTokenAdm($event)" (onRowUnselect)="onRowUnselect($event)"-->
+                    <p-headerColumnGroup>
+                        <p-row>
+                            <p-column header="Fecha Solicitud" [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '37px','font-size':'13px'}"></p-column>
+                            <p-column header="Operadora"        [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '40px','font-size':'13px'}"></p-column>
+                            <p-column header="Cliente"          [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '60px','font-size':'13px'}"></p-column>
+                            <p-column header="Site ID"         [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '57px','font-size':'13px'}"></p-column>
+                            <p-column header="N Token (GB)"    [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '30px','font-size':'13px'}"></p-column>
+                            <p-column header="Codigo"           [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '20px','font-size':'13px'}"></p-column>
+                            <p-column header="Estado"          [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '40px','font-size':'13px'}"></p-column>
+                            <p-column header="Fecha de Atencion" [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '37px','font-size':'13px'}"></p-column>
+                            <p-column header="observacion"     [sortable]="true" [filter]="false" filterMatchMode="equals" [style]="{'width': '63px','font-size':'13px'}"></p-column>
+                        </p-row>
+                    </p-headerColumnGroup>
+                            <p-column field="dsolicitud" header="Fecha Solicitud" [style]="{'font-size':'13px'}" >
+                                <ng-template let-col let-car="rowData" pTemplate="body">
+                                    <span>{{car[col.field] | date: "MM/dd/yyyy HH:mm:ss" }}</span>
+                                </ng-template>
+                            </p-column>
+                            <p-column field="vno_name"       [style]="{'font-size':'13px'}"></p-column>
+                            <p-column field="customer_name"  [style]="{'font-size':'13px'}"></p-column>
+                            <p-column field="siteid"         [style]="{'font-size':'13px'}"></p-column>
+                            <p-column field="numero_tokens"  [style]="{'font-size':'13px'}"></p-column>
+                            <p-column field="idx"  [style]="{'font-size':'13px'}"></p-column>
+                            <p-column field="estado"         [style]="{'font-size':'13px'}"></p-column>
+                            <p-column field="datencion" header="Fecha de atencion" [style]="{'font-size':'13px'}" >
+                                <ng-template let-col let-car="rowData" pTemplate="body">
+                                    <span>{{car[col.field] | date: "MM/dd/yyyy" }}</span>
+                                </ng-template>
+                            </p-column>
+                            <p-column field="observacion"    [style]="{'font-size':'13px'}"></p-column>
+                </p-dataTable>
+
+            </md-card>
+        </div>
+
+        <a md-fab color="accent" class="md-fab-position-bottom-right" (click)="refresh()"> 
+            <md-icon>refresh</md-icon>
+        </a>
+
+    <!--</div>-->
+<!--</div>-->
