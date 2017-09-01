@@ -1,6 +1,6 @@
 # FrontEnd Bifrost
 
-Proyecto Desarrollado por tGestiona 2017 para MediaNetworks
+Proyecto Desarrollado por Cesar Alvarado 2017 para ClaseFinal JoeDayz
 
 ## Setup
 
