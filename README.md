@@ -2,15 +2,13 @@
 
 Contiene 
 
-Menus stylos y Covalent
-Material desing
-Grilla de NgPrime
-Angular2-jwt
+* Menus stylos y Covalent ( https://teradata.github.io/covalent/#/ ) 
+* Material design ( https://material.angular.io/ )
+* NgPrime ( datatable ) ( https://www.primefaces.org/primeng/#/datatable )
+* Angular2-jwt ( https://github.com/auth0/angular2-jwt )
+* Translate ( https://github.com/ngx-translate/core - https://github.com/ngx-translate/http-loader )
 
-Traduccion
-
-
-Proyecto Desarrollado por Cesar Alvarado 2017 para ClaseFinal JoeDayz
+Proyecto Desarrollado por Cesar Alvarado 2017 
 
 ## Setup
 
